@@ -1,0 +1,35 @@
+{
+    "name"       : "bugotech/support",
+    "description": "The Bugotech Support package.",
+    "homepage"   : "http://www.netforce.com.br",
+    "license"    : "GPL v.3",
+
+    "authors": [
+        {
+            "name" : "Bruno Gonçalves",
+            "email": "bugotech@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php"               : ">=5.5.9",
+        "nesbot/carbon"     : "1.*",
+        "illuminate/support": "5.2.*"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Bugotech\\Support\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable"    : true
+}
