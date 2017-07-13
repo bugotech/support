@@ -16,13 +16,13 @@ class Carbon extends \Carbon\Carbon
     }
 
     /**
-     * Format the instance as UTCDateTime
+     * Format the instance as UTCDateTime.
      *
      * @return string
      */
     public function toUTCDateTimeString()
     {
-        $utc = new UTCDateTime($this->getTimestamp() * 1000);;
+        $utc = new UTCDateTime($this->getTimestamp() * 1000);
 
         return trim($utc);
     }
