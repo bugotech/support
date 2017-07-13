@@ -22,8 +22,15 @@ class Carbon extends \Carbon\Carbon
      */
     public function toUTCDateTimeString()
     {
-        $utc = new UTCDateTime($this->getTimestamp() * 1000);
+        return trim($this->getUTCDateTime());
+    }
 
-        return trim($utc);
+    /**
+     * Gets the UTCDateTime.
+     * @return UTCDateTime
+     */
+    public function getUTCDateTime()
+    {
+        return new UTCDateTime($this->getTimestamp() * 1000);
     }
 }
